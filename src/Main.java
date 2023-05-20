@@ -1,20 +1,20 @@
 public class Main{
     public static void main(String[] args){
-        MyQueue myQueue=new MyQueue(10);
-        System.out.println(myQueue.isQueueFull());
-        myQueue.enqueue(1);
-        myQueue.enqueue(2);
-        myQueue.enqueue(3);
+        MyQueue queue = new MyQueue(4);
+        queue.enqueue(4);
+        queue.dequeue();
+        queue.enqueue(56);
+        queue.enqueue(2);
+        queue.enqueue(67);
+        queue.dequeue();
+        queue.enqueue(77);
 
-        myQueue.displayQueue();
-        myQueue.dequeue();
-        myQueue.dequeue();
-        myQueue.dequeue();
-        myQueue.dequeue();
-        myQueue.dequeue();
-        myQueue.displayQueue();
-        myQueue.enqueue(3);
-        myQueue.displayQueue();
-
+        queue.dequeue();
+        queue.enqueue(24);
+        queue.dequeue();
+        queue.enqueue(98);
+        queue.enqueue(45);
+        queue.enqueue(23);
+        queue.enqueue(435);
     }
 }
